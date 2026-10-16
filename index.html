@@ -77,6 +77,16 @@ body{background:var(--bg);color:#171a17;padding-bottom:calc(78px + env(safe-area
 .heroSlogan span{color:#fff!important;-webkit-text-fill-color:#fff!important}
 .heroLogo{color:#fff!important;-webkit-text-fill-color:#fff!important}
 .heroSub{color:#fff!important;-webkit-text-fill-color:#fff!important}.heroBtn{padding:14px}}
+
+/* Ajustement final conforme à la maquette validée */
+.heroLogo,.heroSub{color:#fff!important;-webkit-text-fill-color:#fff!important}
+.heroSlogan{color:#fff!important;font-family:Georgia,"Times New Roman",serif;font-weight:900}
+.heroSlogan span{color:#fff!important;-webkit-text-fill-color:#fff!important}
+.heroSlogan em{color:#00c995!important;-webkit-text-fill-color:#00c995!important}
+.heroSlogan b{color:#f32d3a!important;-webkit-text-fill-color:#f32d3a!important}
+.heroSub{font-size:clamp(11px,3.2vw,15px);letter-spacing:.2em}
+.heroBtn{background:#00966e!important;color:#fff!important;font-size:clamp(13px,3.8vw,16px);letter-spacing:.01em}
+@media(min-height:741px){.heroContent{padding-top:calc(30px + env(safe-area-inset-top));padding-bottom:calc(30px + env(safe-area-inset-bottom))}.heroSlogan{margin-bottom:16px}}
 </style></head><body>
 <main id="home" class="screen active"><div class="hero"><div class="heroContent"><div class="heroTop"><div><div class="heroLogo">Stefie</div><div class="heroSub">TRAINING CLUB</div></div><button class="bell" onclick="alert('Aucune notification pour le moment')">♧</button></div><div class="heroSlogan"><span>POUR</span><br><em>LA SANTÉ.</em><br><span>POUR</span><br><span>LE PHYSIQUE.</span><br><span>POUR</span><br><b>LA BULGARIE.</b></div><div class="flagline"><i></i><i></i><i></i></div><p class="motto">LA DISCIPLINE TRIOMPHE TOUJOURS.</p><button class="btn heroBtn" onclick="show('sessions')">ACCÉDER À MON PROGRAMME&nbsp; →</button></div></div></main>
 <main id="sessions" class="screen"><div class="top"><div><div class="eyebrow">STEFIE TRAINING CLUB</div><h2 style="margin:6px 0 0">Mes séances</h2></div></div><div class="section"><p class="muted small">Choisis une séance pour afficher les exercices et suivre tes séries.</p><div class="daygrid"><button class="day active" onclick="loadWorkout('lundi',this)"><b>LUN.</b>Cardio</button><button class="day" onclick="loadWorkout('mardi',this)"><b>MAR.</b>Haut du corps</button><button class="day" onclick="loadWorkout('jeudi',this)"><b>JEU.</b>Jambes & fessiers</button><button class="day" onclick="loadWorkout('samedi',this)"><b>SAM.</b>Abdos & fessiers</button></div><div id="workout"></div><div id="exerciseDetail" hidden></div></div></main>
