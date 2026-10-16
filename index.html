@@ -73,7 +73,10 @@ body{background:var(--bg);color:#171a17;padding-bottom:calc(78px + env(safe-area
 .exportPreview{background:#fffdf8;border-color:#e1d8cb;color:#171a17}
 .stat{background:#fffdf8;border-color:#e5ded2}
 .footer{color:#88867e}
-@media(max-height:740px){.heroContent{padding-top:calc(20px + env(safe-area-inset-top));padding-bottom:calc(20px + env(safe-area-inset-bottom))}.heroLogo{font-size:48px}.heroSlogan{font-size:clamp(28px,7.5vw,36px)}.heroBtn{padding:14px}}
+@media(max-height:740px){.heroContent{padding-top:calc(20px + env(safe-area-inset-top));padding-bottom:calc(20px + env(safe-area-inset-bottom))}.heroLogo{font-size:48px}.heroSlogan{font-size:clamp(28px,7.5vw,36px)}
+.heroSlogan span{color:#fff!important;-webkit-text-fill-color:#fff!important}
+.heroLogo{color:#fff!important;-webkit-text-fill-color:#fff!important}
+.heroSub{color:#fff!important;-webkit-text-fill-color:#fff!important}.heroBtn{padding:14px}}
 </style></head><body>
 <main id="home" class="screen active"><div class="hero"><div class="heroContent"><div class="heroTop"><div><div class="heroLogo">Stefie</div><div class="heroSub">TRAINING CLUB</div></div><button class="bell" onclick="alert('Aucune notification pour le moment')">♧</button></div><div class="heroSlogan"><span>POUR</span><br><em>LA SANTÉ.</em><br><span>POUR</span><br><span>LE PHYSIQUE.</span><br><span>POUR</span><br><b>LA BULGARIE.</b></div><div class="flagline"><i></i><i></i><i></i></div><p class="motto">LA DISCIPLINE TRIOMPHE TOUJOURS.</p><button class="btn heroBtn" onclick="show('sessions')">ACCÉDER À MON PROGRAMME&nbsp; →</button></div></div></main>
 <main id="sessions" class="screen"><div class="top"><div><div class="eyebrow">STEFIE TRAINING CLUB</div><h2 style="margin:6px 0 0">Mes séances</h2></div></div><div class="section"><p class="muted small">Choisis une séance pour afficher les exercices et suivre tes séries.</p><div class="daygrid"><button class="day active" onclick="loadWorkout('lundi',this)"><b>LUN.</b>Cardio</button><button class="day" onclick="loadWorkout('mardi',this)"><b>MAR.</b>Haut du corps</button><button class="day" onclick="loadWorkout('jeudi',this)"><b>JEU.</b>Jambes & fessiers</button><button class="day" onclick="loadWorkout('samedi',this)"><b>SAM.</b>Abdos & fessiers</button></div><div id="workout"></div><div id="exerciseDetail" hidden></div></div></main>
